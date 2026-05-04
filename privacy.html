@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — CustodyLog</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f1117; color: #e8e9ed; max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; line-height: 1.7; }
+    h1 { font-size: 28px; margin-bottom: 8px; color: #4a9eff; }
+    .meta { color: #6b7089; font-size: 14px; margin-bottom: 40px; }
+    h2 { font-size: 18px; margin: 32px 0 12px; color: #e8e9ed; border-bottom: 1px solid #2d3140; padding-bottom: 8px; }
+    p { margin-bottom: 14px; color: #c0c3cf; }
+    ul { margin: 12px 0 14px 20px; color: #c0c3cf; }
+    li { margin-bottom: 6px; }
+    a { color: #4a9eff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .callout { background: #1a1d27; border: 1px solid #2d3140; border-left: 4px solid #4a9eff; border-radius: 8px; padding: 16px 20px; margin: 20px 0; }
+    .callout p { margin: 0; }
+  </style>
+</head>
+<body>
+  <h1>🛡️ Privacy Policy</h1>
+  <p class="meta">CustodyLog · Last updated: May 2026 · Effective: May 4, 2026</p>
+
+  <div class="callout">
+    <p><strong>The short version:</strong> Your data never leaves your device. We don't have servers. We don't have accounts. We cannot read your entries — only you can.</p>
+  </div>
+
+  <h2>1. What We Collect</h2>
+  <p>CustodyLog stores data <strong>locally on your device only</strong>. The app does not transmit your custody log entries, attachments, children's information, or any personal data to any server, cloud service, or third party.</p>
+  <p>We collect no personally identifiable information (PII) through the app itself.</p>
+
+  <h2>2. Local Storage</h2>
+  <p>All your entries, attachments, and settings are stored on your device using:</p>
+  <ul>
+    <li><strong>AsyncStorage</strong> — encrypted incident entries and app settings.</li>
+    <li><strong>SecureStore (Keychain / Keystore)</strong> — your PIN hash, encryption key, and biometric preferences. This area of your device is protected by the operating system and is not accessible to other apps or to us.</li>
+    <li><strong>Document Directory</strong> — photo and file attachments you add to entries. These files stay within the app's sandboxed storage.</li>
+    <li><strong>SecureStore</strong> — children's profile data (name, date of birth).</li>
+  </ul>
+
+  <h2>3. Crash Reporting (Optional)</h2>
+  <p>CustodyLog may use <strong>Sentry</strong> for crash reporting to help us fix bugs. Sentry is disabled by default and you can opt out during onboarding or in Settings → Crash Reporting.</p>
+  <p>If enabled, Sentry may collect:</p>
+  <ul>
+    <li>Device type and operating system version</li>
+    <li>App version</li>
+    <li>Stack traces at the time of a crash (no entry content is included)</li>
+  </ul>
+  <p>Sentry does not receive your custody log entries, children's names, or any personal details. Their privacy policy is available at <a href="https://sentry.io/privacy/" target="_blank" rel="noopener">sentry.io/privacy</a>.</p>
+
+  <h2>4. In-App Purchases</h2>
+  <p>PDF Export is available as a one-time $9.99 in-app purchase processed by <strong>Apple App Store</strong> (iOS) or <strong>Google Play</strong> (Android). Purchase management is handled by <strong>RevenueCat</strong>, which stores a randomly generated anonymous App User ID and your purchase receipt. RevenueCat does not receive your custody log data.</p>
+  <ul>
+    <li>Apple's privacy policy: <a href="https://www.apple.com/privacy/" target="_blank" rel="noopener">apple.com/privacy</a></li>
+    <li>Google's privacy policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+    <li>RevenueCat's privacy policy: <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a></li>
+  </ul>
+
+  <h2>5. Analytics</h2>
+  <p>CustodyLog does not include any analytics SDK. We do not track your usage patterns, screen views, feature use, or any other behavioral data.</p>
+
+  <h2>6. Children's Privacy</h2>
+  <p>CustodyLog is designed for adults (parents and guardians) involved in custody situations. Children's names and dates of birth entered into the app are stored only on your device and are never transmitted anywhere. We do not knowingly collect data from children under 13.</p>
+
+  <h2>7. Data Security</h2>
+  <p>Your data is protected by:</p>
+  <ul>
+    <li>A PIN lock and optional Face ID / Touch ID, which you set up and control.</li>
+    <li>An encryption key stored in your device's secure enclave (iOS Keychain / Android Keystore), which we cannot access.</li>
+    <li>Auto-lock after 2 minutes of inactivity.</li>
+    <li>Lockout after 5 failed PIN attempts.</li>
+  </ul>
+
+  <h2>8. Backups and Exports</h2>
+  <p>When you export a backup or report, the file is generated on your device and shared through your device's native share sheet. We do not receive copies of your exports.</p>
+  <p><strong>Important:</strong> If you share an export file (email, cloud storage, etc.), that sharing is your responsibility and subject to the privacy policies of the services you use.</p>
+
+  <h2>9. Changes to This Policy</h2>
+  <p>We may update this policy. Significant changes will be noted in the app release notes. The "Last updated" date at the top of this page always reflects the current version.</p>
+
+  <h2>10. Contact</h2>
+  <p>Questions about this policy? Email us at <a href="mailto:privacy@custodylog.app">privacy@custodylog.app</a>.</p>
+
+  <p style="margin-top: 48px; color: #6b7089; font-size: 13px;">
+    CustodyLog · <a href="terms.html">Terms of Use</a> · <a href="privacy.html">Privacy Policy</a>
+  </p>
+</body>
+</html>
